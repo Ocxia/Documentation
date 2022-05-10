@@ -1,0 +1,502 @@
+body {
+    height: 100vh;
+    max-height: 1500px;
+    min-height: 1200px;
+    position: relative;
+    font-size: 20px;
+    margin: 1px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000000;
+    /*background-image:linear-gradient(#AEB6BF, #515A5A);*/
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("image/backgroundbd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    background: crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.icone {
+    width: 20px;
+}
+
+header{
+    width: 100%;
+    height: 150vh;
+    background: url(image/bd.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 500px;
+    max-width: 100vh;
+    padding: 30px;
+    background: #B9B5A9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0,0,0,.2);
+    border: double 15px;
+    align-self: center;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background: url(image/ocxia.jpg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 30px;
+}
+
+.sujet {
+    font-size: 20px;    
+}
+
+.presentation {
+    font-size: 20px;    
+}
+
+.lieu {
+    font-size: 20px;
+}
+
+
+
+.texte{
+    margin: 4vh auto;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    width: 85%;
+    color: black;
+    padding: 5px;
+}
+
+.lien {
+    color: #000000;
+}
+
+
+/*nav start*/
+nav{
+    width: 100%;
+    background-color: #424558;
+    position: relative;
+    z-index: 1000;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #FFF;
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+    
+    
+}
+
+nav li{
+    list-style-type: none;
+    
+    
+}
+/*nav end*/
+
+/*submenu start*/
+.submenu{
+display: none;       
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;  
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding:  0px;
+    z-index: 1000;
+}
+
+.submenu li{
+    border-bottom: 1px solid #CCC;    
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #222538;
+    width: 427px;
+}
+/*submenu end*/
+
+/*hover menu start*/
+.menu-acceuil:hover{
+    border-top: 5px solid #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-reco:hover{
+    border-top: 5px solid #9DBD93;
+    background-color: rgba(157, 189, 147, 0.15);
+}
+
+.menu-actu:hover{
+    border-top: 5px solid #00FFF0;
+    background-color: rgba(0, 255, 240, 0.15);
+}
+
+.menu-rick:hover{
+    border-top: 5px solid #00FF46;
+    background-color: rgba(0, 255, 70, 0.15); 
+}
+
+.menu-simp:hover{
+    border-top: 5px solid #F1DC4F;
+    background-color: rgba(241, 211, 79, 0.15); 
+}
+
+.menu-tin:hover{
+    border-top: 5px solid #0070BB;
+    background-color: rgba(000, 112, 192, 0.15); 
+}
+
+.menu-kid:hover{
+    border-top: 5px solid #61F931;
+    background-color: rgba(97, 249, 49, 0.15); 
+}
+
+.menu-teuf:hover{
+    border-top: 5px solid #8712E8;
+    background-color: rgba(135, 18, 232, 0.15); 
+}
+
+.menu-maliki:hover{
+    border-top: 5px solid #FE33A2;
+    background-color: rgba(254, 51, 162, 0.15); 
+}
+
+.menu-marsu:hover{
+    border-top: 5px solid #FEFE33;
+    background-color: rgba(254, 254, 51, 0.15);
+}
+
+.menu-schtroumpfs:hover{
+    border-top: 5px solid #3591FF;
+    background-color: rgba(53, 145, 255, 0.15);
+}
+
+.menu-cretin:hover{
+    border-top: 5px solid #DCC58D;
+    background-color: rgba(220, 197, 141, 0.15);
+}
+
+.menu-zelda:hover{
+    border-top: 5px solid #E44D26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+/* Hover menu fin*/
+
+/*menu + submenu start*/
+.menu-acceuil .submenu{
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-reco .submenu{
+    background-color: rgb(157, 189, 147);
+}
+
+.menu-actu .submenu{
+    background-color: rgb(0, 255, 240);
+}
+
+.menu-rick .submenu{
+    background-color: rgb(0, 255, 70);
+}
+
+.menu-simp .submenu{
+    background-color: rgb(241, 211, 79);
+}
+
+.menu-tin .submenu{
+    background-color: rgb(000, 112, 192);
+}
+
+.menu-kid .submenu{
+    background-color: rgb(97, 249, 49);
+}
+
+.menu-teuf .submenu{
+    background-color: rgb(135, 18, 232);
+}
+
+.menu-maliki .submenu{
+    background-color: rgb(254, 51,162);
+}
+
+.menu-marsu .submenu{
+    background-color: rgb(254, 254,51);
+}
+
+.menu-schtroumpfs .submenu{
+    background-color: rgb(53, 145, 255);
+}
+
+.menu-cretin .submenu{
+    background-color: rgb(220, 197, 141);
+}
+
+.menu-zelda .submenu{
+    background-color: rgb(228, 77, 38);
+}
+
+/*menu + submenu end*/
+
+/*submenu + hover start*/
+.submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+
+.menu-acceuil .submenu li:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-reco .submenu li:hover{
+    background-color: rgb(157, 189, 147);
+}
+
+.menu-actu .submenu li:hover{
+    background-color: rgb(0, 255, 240);
+}
+
+.menu-rick .submenu li:hover{
+    background-color: rgb(0, 255, 70);
+}
+
+.menu-simp .submenu li:hover{
+    background-color: rgb(241, 211, 79);
+}
+
+.menu-tin .submenu li:hover{
+    background-color: rgb(000, 112, 192);
+}
+
+.menu-kid .submenu li:hover{
+    background-color: rgb(97, 249, 49);
+}
+
+.menu-teuf .submenu li:hover{
+    background-color: rgb(147, 50, 228);
+}
+
+.menu-maliki .submenu li:hover{
+    background-color: rgb(254, 51, 162);
+}
+
+.menu-marsu .submenu li:hover{
+    background-color: rgb(254, 254, 51);
+}
+
+.menu-schtroumpfs .submenu li:hover{
+    background-color: rgb(53, 145, 155);
+}
+
+.menu-cretin .submenu li:hover{
+    background-color: rgb(220, 197, 141);
+}
+
+.menu-zelda .submenu li:hover{
+    background-color: rgb(228, 77, 38);
+}
+/*submenu + hover end*/
+
+.lien{
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+}
+
+@media screen and (max-width: 320px){
+    .card{
+      display: none;
+    }
+     
+}
+
+.card {
+    min-width: 100px;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    right: 25%;
+    transform: translate(-50, -50%);
+    padding: 20px 20px 40px;
+    background-color: #424558;
+    -webkit-background-clip: card;
+    background-clip: card;
+    box-shadow:
+    0 0 10vw 0vw #7476ff,
+    0 0  2vw 0.4vw #0408fb,
+    
+    inset 0 0 .5vw 0.2vw #7476ff,
+    inset 0 0 0.2vw 0.2vw #3134ff,
+    inset 0 0 .25vw 0.2vw #0408fb;
+    border-radius: 22px;
+}
+
+.card h1 {
+    font-family: Mali, sans-serif;
+    font-size: 50px;
+    font-weight: 50px;
+    color:#f1f1f1e3;
+    text-shadow:
+    .1vw 0vw .25vw #7476ff,    
+    .15vw 0vw .25vw #7476ff,
+
+    .1vw 0vw .1vw #3134ff,
+    .15vw 0vw .1vw #3134ff,
+    .4vw 0vw .1vw #3134ff,
+      
+    .1vw 0vw 2vw #3134ff,
+    .15vw 0vw 2vw #3134ff,
+    .4vw 0vw 2vw #3134ff,
+    
+    .1vw 0vw 1vw #0408fb,
+    .15vw 0vw 1vw #0408fb,
+    .4vw 0vw 5vw #0408fb,
+    
+    .1vw 0vw 5vw #0408fb,
+    .15vw 0vw 20vw #0408fb,
+    .4vw 0vw 10vw #0408fb,
+    
+    .1vw 0vw 10vw #0408fb,
+    .15vw 0vw 30vw #0408fb,
+    .4vw 0vw 10vw #0408fb;
+
+    animation: blink 2s infinite alternate;
+    
+}
+
+.card span {
+    font-family: Raleway, sans-serif;
+    padding-left: 10px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    color:#f1f1f1cb;
+    text-shadow:
+    .1vw 0vw .25vw #ff7474,
+    .125vw 0vw .25vw #ff7474,
+    
+    .1vw 0vw .1vw #ff3131,
+    .125vw 0vw .1vw #ff3131,
+    .15vw 0vw .1vw #ff3131,
+    
+    .1vw 0vw 2vw #ff3131,
+    .125vw 0vw 2vw #ff3131,
+    .15vw 0vw 2vw #ff3131,
+    
+    .1vw 0vw 1vw #fb0404,
+    .125vw 0vw 1vw #fb0404,
+    .15vw 0vw 5vw #fb0404,
+    
+    .1vw 0vw 5vw #fb0404,
+    .125vw 0vw 20vw #fb0404,
+    .15vw 0vw 10vw #fb0404;
+    
+}
+
+.card img {
+    position: absolute;
+    width: 250px;
+    bottom: -55%;
+    left: 30%;
+    filter:
+    drop-shadow(0 0.10vw 0.30vw #fffb0e)
+    drop-shadow(0 0.10vw 0.30vw #8a8942);
+    animation: livre-blink 2s infinite alternate;
+}
+
+@keyframes blink {
+    
+    0%, 18%, 22%, 25%, 53%, 57%,
+    100% {
+        
+        text-shadow:
+        0 0   0.5vw #7476ff,
+        0.1vw 0 0.5vw #7476ff,
+        0.3vw 0 0.5vw #7476ff,
+        
+        0 0 1.2vw #3134ff,
+        0.1vw 0 1.2vw #3134ff,
+        0.3vw 0 1.2vw #3134ff,
+        
+        0 0 3vw #0408fb,
+        0.1vw 0 3vw #0408fb,
+        0.3vw 0 3vw #0408fb;
+        
+    }
+    
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+ }
+ 
+ @keyframes livre-blink {
+    0%, 9%, 15%, 79%, 83%, 100%{
+        
+        filter:
+        drop-shadow(0 0.15vw 0.30vw #fffb0e)
+        drop-shadow(0 0.15vw 0.30vw #8a8942);
+        
+    }
+    
+    10%, 14%, 80%, 82% {
+        
+        filter: none;
+    }  
+ }
+ 
+ 
